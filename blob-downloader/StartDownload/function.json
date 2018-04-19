@@ -1,0 +1,19 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "name": "sourceFile",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "source/{name}",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "name": "outQueue",
+      "type": "queue",
+      "direction": "out",
+      "connection": "AzureWebJobsStorage",
+      "queueName": "downloads"
+    }
+  ]
+}
